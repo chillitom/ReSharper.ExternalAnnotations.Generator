@@ -44,7 +44,8 @@ namespace Ninject.Annotations
                     id: "Ninject.Annotations", 
                     title: "Ninject Annotations",
                     authors: "Tom Rathbone", 
-                    owners: "Tom Rathbone", 
+                    owners: "Tom Rathbone",
+                    projectUrl: "https://github.com/chillitom/ReSharper.ExternalAnnotations.Generator/blob/master/Ninject.Annotations/Program.cs", 
                     iconUrl: "https://raw.githubusercontent.com/ninject/ninject/master/logos/Ninject-Logo32.png", 
                     description: "External Annotations for Ninject and Ninject Extensions"));
         }

@@ -8,7 +8,8 @@ namespace AnnotationGenerator
             string version = "1.0.0.0", 
             string title = "Annotations", 
             string authors = "Anonymous", 
-            string owners = "Anonymous", 
+            string owners = "Anonymous",
+            string projectUrl = "",
             string iconUrl = "", 
             string description = "", 
             string tags = "")
@@ -18,6 +19,7 @@ namespace AnnotationGenerator
             Title = title;
             Authors = authors;
             Owners = owners;
+            ProjectUrl = projectUrl;
             IconUrl = iconUrl;
             Description = description;
             Tags = tags;
@@ -28,6 +30,7 @@ namespace AnnotationGenerator
         public string Title { get; private set; }
         private string Authors { get; set; }
         private string Owners { get; set; }
+        private string ProjectUrl { get; set; }
         private string IconUrl { get; set; }
         private string Description { get; set; }
         private string Tags { get; set; }
@@ -44,6 +47,7 @@ namespace AnnotationGenerator
                         new XElement("title", Title),
                         new XElement("authors", Authors),
                         new XElement("owners", Owners),
+                        new XElement("projectUrl", ProjectUrl),
                         new XElement("iconUrl", IconUrl),
                         new XElement("description", Description),
                         new XElement("tags", Tags),

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnotationGenerator", "AnnotationGenerator.csproj", "{4C5ACADA-D925-4056-9C8E-D7C4B464C19F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnotationGenerator", "AnnotationGenerator\AnnotationGenerator.csproj", "{4C5ACADA-D925-4056-9C8E-D7C4B464C19F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnotationGenerator.Tests", "..\AnnotationGenerator.Tests\AnnotationGenerator.Tests.csproj", "{F4CF9A6C-CB48-4297-9326-A86CF7D8A033}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnotationGenerator.Tests", "AnnotationGenerator.Tests\AnnotationGenerator.Tests.csproj", "{F4CF9A6C-CB48-4297-9326-A86CF7D8A033}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninject.Annotations", "..\Ninject.Annotations\Ninject.Annotations.csproj", "{8848FEB5-C6A4-4370-B23E-6FC045BEEB77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninject.Annotations", "Ninject.Annotations\Ninject.Annotations.csproj", "{8848FEB5-C6A4-4370-B23E-6FC045BEEB77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
