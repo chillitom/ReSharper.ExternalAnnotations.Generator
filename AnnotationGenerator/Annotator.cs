@@ -29,7 +29,7 @@ namespace AnnotationGenerator
 
         public void CreateNugetPackage(NugetSpec spec)
         {
-            var directory = Path.Combine(spec.Title, "ReSharper", "vAny", "annotations");
+            var directory = Path.Combine(spec.Id, "ReSharper", "vAny", "annotations");
 
             if (!Directory.Exists(directory))
             {
@@ -42,8 +42,8 @@ namespace AnnotationGenerator
 
         private static void WriteSpecFile(NugetSpec spec)
         {
-            var specFilename = spec.Title + "." + spec.Version + ".nuspec";
-            var specFilePath = Path.Combine(spec.Title, specFilename);
+            var specFilename = spec.Id + "." + spec.Version + ".nuspec";
+            var specFilePath = Path.Combine(spec.Id, specFilename);
 
             using (var writer = new XmlTextWriter(specFilePath, Encoding.UTF8) {Formatting = Formatting.Indented})
             {
@@ -58,7 +58,7 @@ namespace AnnotationGenerator
                 var assemblyName = document.XPathSelectElement("/assembly").Attribute("name").Value;
                 var filename = assemblyName + ".xml";                
 
-                var path = Path.Combine(spec.Title, "ReSharper", "vAny", "annotations", filename);
+                var path = Path.Combine(spec.Id, "ReSharper", "vAny", "annotations", filename);
 
                 using (var writer = new XmlTextWriter(path, Encoding.UTF8) {Formatting = Formatting.Indented})
                 {

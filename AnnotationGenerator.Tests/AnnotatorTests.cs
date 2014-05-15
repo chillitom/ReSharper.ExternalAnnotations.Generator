@@ -75,7 +75,7 @@ namespace AnnotationGenerator.Tests
 
             annotator.AnnotateAssemblyContaining<ILogger>(asm =>
             {
-                asm.AnnotateType<ILoggerFactory>(type => type.Annotate(i => i.GetLogger(Any<string>._), NotNull._));
+                asm.AnnotateType<ILoggerFactory>(type => type.Annotate(i => i.GetLogger(Any<Type>._), NotNull._));
             });
 
             var doc = annotator.GetDocuments().First();
@@ -155,7 +155,7 @@ namespace AnnotationGenerator.Tests
 
             annotator.AnnotateAssemblyContaining<ILogger>(asm =>
             {
-                asm.AnnotateType<ILoggerFactory>(type => type.Annotate(i => i.GetLogger(Any<string>._), NotNull._));
+                asm.AnnotateType<ILoggerFactory>(type => type.Annotate(i => i.GetLogger(Any<Type>._), NotNull._));
             });
 
             var doc = annotator.GetDocuments().First();

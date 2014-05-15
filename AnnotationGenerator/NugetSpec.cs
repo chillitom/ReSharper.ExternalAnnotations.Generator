@@ -25,9 +25,9 @@ namespace AnnotationGenerator
             Tags = tags;
         }
 
-        private string Id { get; set; }
+        public string Id { get; private set; }
         public string Version { get; private set; }
-        public string Title { get; private set; }
+        private string Title { get; set; }
         private string Authors { get; set; }
         private string Owners { get; set; }
         private string ProjectUrl { get; set; }

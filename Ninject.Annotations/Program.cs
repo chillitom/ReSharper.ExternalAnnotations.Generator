@@ -31,7 +31,6 @@ namespace Ninject.Annotations
 
                 asm.AnnotateType<ILoggerFactory>(type =>
                 {
-                    type.Annotate(logger => logger.GetLogger(Any<string>._), NotNull._);
                     type.Annotate(logger => logger.GetLogger(Any<Type>._), NotNull._);
                 });
             });
