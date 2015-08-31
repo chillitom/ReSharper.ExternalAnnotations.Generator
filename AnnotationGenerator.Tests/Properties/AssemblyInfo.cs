@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("AnnotationGenerator.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Starlizard Consulting Ltd")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("AnnotationGenerator.Tests")]
-[assembly: AssemblyCopyright("Copyright © Starlizard Consulting Ltd 2014")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
